@@ -28,6 +28,7 @@ defmodule ELEPHANT.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [{:excheck, "~> 0.5", only: :test},
+     {:triq, github: "triqng/triq", only: :test}]
   end
 end
